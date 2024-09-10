@@ -15,21 +15,25 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="24dp"
-        android:text="@string/question_australia" />
+        android:text="@string/question_australia"
+        android:textAlignment="center" />
 
     <LinearLayout
+        style="?android:attr/buttonBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/true_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/correct_toast" />
 
         <Button
             android:id="@+id/false_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/incorrect_toast" />
@@ -41,6 +45,9 @@
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/next_button" />
+        android:text="@string/next_button"
+        app:icon="@drawable/baseline_arrow_right_24"
+        app:iconGravity="end"
+        />
 
 </LinearLayout>
