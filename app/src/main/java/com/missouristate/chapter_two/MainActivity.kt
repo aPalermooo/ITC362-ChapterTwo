@@ -47,6 +47,12 @@ class MainActivity : AppCompatActivity() {
             updateQuestion()
         }
 
+        //Exercise 2
+        binding.questionTextView.setOnClickListener {
+            currentIndex = (currentIndex + 1) % questionBank.size
+            updateQuestion()
+        }
+
         updateQuestion()
 
     }
