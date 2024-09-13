@@ -47,6 +47,13 @@ class MainActivity : AppCompatActivity() {
             updateQuestion()
         }
 
+        //exercise 3
+        //ref https://stackoverflow.com/questions/14785443/is-there-an-expression-using-modulo-to-do-backwards-wrap-around-reverse-overfl
+        binding.prevButton.setOnClickListener {
+            currentIndex = (currentIndex + (questionBank.size - 1)) % questionBank.size
+            updateQuestion()
+        }
+
         //Exercise 2
         binding.questionTextView.setOnClickListener {
             currentIndex = (currentIndex + 1) % questionBank.size
